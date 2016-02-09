@@ -402,7 +402,7 @@ if (contacts == 'pool_start' && drawater == false) {
 }
 
 	
-var vec =Math.random()*Math.PI, scale2=Math.random()+0.3, height=Math.random()*0.6+0.2, speed=Math.random()*2+0.4 ;   
+var vec =Math.random()*Math.PI, scale2=Math.random()+0.3, height2=Math.random()*0.6+0.2, speed=Math.random()*2+0.4 ;   
   var h=7;
   
 var con;
@@ -507,7 +507,7 @@ inter2 = setTimeout(update, 1000 / 30);
         context.beginPath();
         context.moveTo(950,600);        
         vec+=0.02*speed;        
-        for(var j=950;j<3650;j+=2){ context.lineTo( j , Math.sin(vec+j/100*scale2)*(height*h)+360 ); }
+        for(var j=950;j<3650;j+=2){ context.lineTo( j , Math.sin(vec+j/100*scale2)*(height2*h)+360 ); }
         context.lineTo(3650,600);
         context.closePath();
 		var gradientFill = context.createLinearGradient(1200*.5,350,1200*.5,500);
